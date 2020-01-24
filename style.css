@@ -134,7 +134,7 @@ a:hover {
   z-index: 9998;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
 }
 
 .nav-list {
@@ -167,14 +167,26 @@ a:hover {
   height: 36px;
 }
 
-.promos ul li + li a {
-  border-left: 2px solid #fff;
-}
-
 .p-your-verse a {
   display: inline-block;
   margin-bottom: 25px;
   height: 29px;
+}
+
+.promos ul li a {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.promos ul li + li a {
+  border-left: 2px solid #fff;
 }
 
 .p-your-verse a:hover {
@@ -194,7 +206,6 @@ a:hover {
   text-indent: -9999px;
   cursor: pointer;
   border-width: 0 2px 0 1px;
-  /* border-style: solid; */
 }
 
 .header .nav-list li:first-child a {
@@ -288,7 +299,6 @@ a:hover {
   width: 100%;
   height: 19px;
   padding: 2px 18px 1px 22px;
-  /* background-image: none; */
   border-radius: 12px;
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -397,18 +407,6 @@ a:hover {
   max-width: 1440px;
   height: 200px;
   text-align: center;
-}
-
-.promos ul li a {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
 }
 
 .promos ul li a img {
