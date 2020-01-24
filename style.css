@@ -269,6 +269,8 @@ h2 {
   border: 0 none;
 }
 
+/* Billboard */
+
 #billboard {
   position: absolute;
   top: 0;
@@ -356,6 +358,8 @@ h2 {
   margin-top: -32px;
 }
 
+/* Promos */
+
 .promos {
   position: absolute;
   z-index: 1;
@@ -409,6 +413,8 @@ h2 {
 .promos ul li + li a {
   border-left: 2px solid #fff;
 }
+
+/* Footer */
 
 #home-footer {
   position: absolute;
