@@ -273,7 +273,7 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 592px;
+  bottom: 292px;
   left: 0;
   overflow: hidden;
   display: block;
@@ -385,4 +385,134 @@ h2 {
   margin: 0;
   width: 25%;
   height: 200px;
+}
+
+.promos ul li a {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.promos ul li a img {
+  position: absolute;
+  z-index: 1;
+  left: 54%;
+  margin-left: -182px;
+}
+
+.promos ul li + li a {
+  border-left: 2px solid #fff;
+}
+
+#home-footer {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  min-width: 980px;
+  width: 100%;
+  height: 90px;
+  padding: 0;
+  color: #6e6e6e;
+  font-size: 0.6em;
+  line-height: 1.2;
+  text-align: center;
+  zoom: 1;
+}
+
+#home-footer p, 
+#home-footer ul, 
+#home-footer li {
+  display: inline;
+  margin: 0;
+}
+
+#home-footer .wrapper-text {
+  margin: 0 auto;
+  width: 980px;
+  padding: 1em 0 2.6em;
+}
+
+#home-footer .left-text {
+  float: left;
+  clear: both;
+  width: 49%;
+  padding-top: 1.5em;
+  text-align: left;
+}
+
+#home-footer .right {
+  float: right;
+  width: 51%;
+  padding-top: 1.5em;
+  text-align: right;
+}
+
+#home-footer .right li.first {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+
+#home-footer .right a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#home-footer .list li {
+  display: inline-block;
+  float: none;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  border-left: 1px solid #ccc;
+}
+
+#home-footer .right .us-flag {
+  position: relative;
+  z-index: 1;
+  width: 16px;
+  height: 12px;
+  zoom: 1;
+}
+
+#home-footer .right .us-flag .flag-img {
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: 7px;
+}
+
+#home-footer .bottom-text {
+  float: left;
+  clear: both;
+  width: 49%;
+  padding-top: 1.5em;
+  text-align: left;
+}
+
+#home-footer .bottom-text .bottom .terms{
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+
+#home-footer .bottom-text .bottom a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
